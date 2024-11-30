@@ -141,7 +141,7 @@ body {
   height: 11vmin;
   border-radius: 51% 49% 47% 53%/44% 45% 55% 69%;
   background-color: #a7ffee;
-  background-image: linear-gradient(to top, #54b8aa, #a7ffee);
+  background-image: linear-gradient(to top, #54b8aa, #a7ffee); /* part of the petal */
   transform-origin: bottom center;
   opacity: 0.9;
   box-shadow: inset 0 0 2vmin rgba(255, 255, 255, 0.5);
@@ -202,7 +202,8 @@ body {
   height: var(--h);
   border-top-right-radius: var(--h);
   border-bottom-left-radius: var(--h);
-  background-image: linear-gradient(to top, rgba(20, 117, 122, 0.4), #39c6d6);
+  background-image: linear-gradient(to top, rgba(20, 117, 122, 0.4), #39c6d6);  /* color of leafs */
+  
 }
 .flower__line__leaf--1 {
   transform: rotate(70deg) rotateY(30deg);
@@ -245,7 +246,7 @@ body {
   animation: light-ans 4s linear infinite backwards;
 }
 .flower__light:nth-child(odd) {
-  background-color: #23f0ff;
+  background-color: #23f0ff; 
 }
 .flower__light--1 {
   left: -2vmin;
@@ -347,6 +348,29 @@ body {
   transform: rotate(10deg);
   animation: growing-grass-ans--2 2s 2.4s linear backwards;
 }
+
+nav {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+}
+
+nav a {
+  padding: 10px 15px;
+  background-color: rgba(75, 0, 130, 0.9);
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: violet;
+}
+
+
+
 @keyframes growing-grass-ans--2 {
   0% {
     transform-origin: bottom right;
@@ -986,3 +1010,32 @@ body {
 }
 
 /*# sourceMappingURL=style.css.map */
+body.annie-theme {
+  background: linear-gradient(to bottom, #4a148c, #12005e);
+  color: white;
+}
+
+body.victoria-theme {
+  background: linear-gradient(to bottom, #fbc02d, #ffeb3b);
+  color: black;
+}
+
+body.irene-theme {
+  background: linear-gradient(to bottom, #b71c1c, #880e4f);
+  color: white;
+}
+
+.flower--purple {
+  background: linear-gradient(to top, purple, violet);
+  box-shadow: 0 0 10px purple, 0 0 15px violet;
+}
+
+.flower--yellow {
+  background: linear-gradient(to top, yellow, gold);
+  box-shadow: 0 0 10px yellow, 0 0 15px gold;
+}
+
+.flower--red {
+  background: linear-gradient(to top, red, pink);
+  box-shadow: 0 0 10px red, 0 0 15px pink;
+}
