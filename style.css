@@ -1010,20 +1010,7 @@ nav a:hover {
 }
 
 /*# sourceMappingURL=style.css.map */
-body.annie-theme {
-  background: linear-gradient(to bottom, #4a148c, #12005e);
-  color: white;
-}
 
-body.victoria-theme {
-  background: linear-gradient(to bottom, #fbc02d, #ffeb3b);
-  color: black;
-}
-
-body.irene-theme {
-  background: linear-gradient(to bottom, #b71c1c, #880e4f);
-  color: white;
-}
 
 .flower--purple {
   background: linear-gradient(to top, purple, violet);
